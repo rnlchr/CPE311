@@ -1,0 +1,33 @@
+#For my Prelim Quiz 2, we have the Making Change Problem:
+Making Change. You are given n types of coin denominations of values v(1) < v(2) < ... < v(n) (all integers). Assume v(1) = 1,
+so you can always make change for any amount of money C. Give an algorithm which makes change for an amount of money C with as few coins as possible. [on problem set 4]#
+
+class MakingChange:
+  def __init__ (self, v, n, c):
+    self.value= v
+    self.coins= n
+    self.money= c
+
+  def getMoney(self):
+    return self.money
+  def getVal(self):
+    return self.value
+  def yourCoins(self):
+    return self.n
+  def GreedyAlgo(self, v,n,c):
+    coin_combo= []
+    yourCash= getMoney()
+    if yourCash == 0:
+      print ("You got no cash, Cant Change that!")
+    if yourCash == 1:
+      return 1
+    else:
+      TotalChange += coin_combo.n
+      coin_combo.append(n)
+
+
+money= 10
+value= ['v(1)','v(2)','v(3)', 'v(4)']
+coins=[1,5,10,20]
+
+print(MakingChange.GreedyAlgo(value.v, coins.n, money.c))
